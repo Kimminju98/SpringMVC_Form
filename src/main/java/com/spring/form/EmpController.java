@@ -51,6 +51,7 @@ public class EmpController {
 	@RequestMapping("/viewemp")
 	public String viewemp(Model m) {
 		List<Emp> list=dao.getEmployees();
+
 		m.addAttribute("list",list);
 		return "viewemp";
 	}
